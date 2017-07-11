@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be.">
+
+		<title>Relaxr Landing Page</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800' rel='stylesheet' type='text/css'>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+		<!-- <a ref='register.html'>Link to register</a> you can use the anchor tag to take you to another page ie if click on Link to register it will take you to the register.html page or you can use the form action to take you to the page with form action="register.html"-->
+		<form action="register.html" method="get"> <!--action is the location where it's being sent and method is the type of request we are sending. Now we need to make a button for you to click on-->
+
+			<!-- there are 4 types of methods: Post; Get; Put; To. get = read; put = create. html forms are only able to read "get" and "post"-->
+
+			<!--method="get" is reading. nything you type in the URL bar or an anchor tag is a "get" request (just reading not modifying so if we have action="https://www.linkedin.com/" method="get" then hit the submit button it will take you to the linked in page).
+
+			<!--method="post" that is when we are sending/submitting information to the server (read and write)-->
+			<label for="username">Username: </label> <!--label for will highlight the input field box-->
+			<input type="text" id='username'> <!--to take in user input. by adding an id to the label it ensures that the label for username will be linked to the username input field for when we want to call on it for CSS or Javascript and want ot use the value input-->
+
+			<label for="">Password: </label>
+			<input type="password" > <!--to take in user input but makes it hidden when typed-->
+			<br>
+
+			Maroon 5
+			<input type="checkbox" name='favBand' value='Maroon5'>
+			Led Zeppelin
+			<input type="checkbox" name='favBand' value='Led Zeppelin'> <!-- we have a name and a value so the server knows what detail has been provided in the input, it wont display on the page-->
+
+			<select class="" name="">
+				<option value=""> Maroon5</option>
+				<option value=""> Led Zeppelin</option>
+				<option value=""> Other Band</option>
+			</select>
+			<br>
+			<textarea name="name" rows="8" cols="80"></textarea>
+
+			<input type="submit" value="Submit"> <!--when click submit button then the form will exexute the request-->
+		</form>
+
+	</body>
+</html>
